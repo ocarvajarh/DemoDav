@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:cxf="http://camel.apache.org/schema/cxf"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd        http://camel.apache.org/schema/cxf http://camel.apache.org/schema/cxf/camel-cxf.xsd    ">
-    <cxf:cxfEndpoint address="http://0.0.0.0:8183/cxf/order"
+    <cxf:cxfEndpoint address="http://0.0.0.0:8183/cxf/order1"
         id="orderEndpoint" serviceClass="org.fusesource.camel.ws.OrderEndpoint"/>
     <camelContext id="rider-auto-ws" trace="false" xmlns="http://camel.apache.org/schema/spring">
         <route customId="true" id="ws-to-jms">
